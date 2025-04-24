@@ -21,7 +21,13 @@ h6 {
 .menu-list {
   font-size: 0;
 }
-
+strong {
+  font-weight: 500;
+}
+em,
+blockquote {
+  font-style: italic;
+}
 .menu-list .menu-item {
   font-size: 1.6rem;
   display: inline-block;
@@ -205,4 +211,81 @@ img {
     rgba(253, 187, 45, 1) 100%
   );
   scale: 110%;
+}
+
+.blog-main {
+  max-width: 1200px;
+  margin: 30px auto;
+  font-size: 1.6rem;
+}
+
+.blog-main h1 {
+  text-align: center;
+  font-size: 2.4rem;
+}
+
+.blog-main p {
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 1.5;
+}
+.blog-main img {
+  display: block;
+  width: 80%;
+  border-radius: 0;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.blog-img {
+  text-align: center;
+}
+
+.blog-main p:first-of-type::first-letter {
+  font-size: 2.6rem;
+}
+.blog-main p::first-line {
+  font-weight: 500;
+}
+p::selection {
+  background-color: blue;
+  color: #fff;
+}
+
+blockquote p::before,
+blockquote p::after {
+  content: '"';
+}
+.comment-box {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.cmt {
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start; */
+  margin-top: 10px;
+}
+
+.cmt .name {
+  margin-left: 0;
+
+  font-weight: 500;
+}
+.cmt .name::after {
+  content: ":";
+}
+
+.cmt .comment {
+  margin-right: 20px;
+}
+.heading:not(h1) {
+  color: rgb(104, 25, 207);
+}
+
+.cmt:hover {
+  background-color: yellow;
 }
